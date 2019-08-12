@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+</head>
+
+<body>
+
+
+            <div id="log">
+
+            </div>
+
+            <script>
+
+                        var personDetails = [
+                                    {
+                                                name: "maris",
+                                                age: 23,
+                                                job: "front-end"
+                                    },
+                                    {
+                                                name: "prasanth",
+                                                age: 22,
+                                                job: "react-developer"
+                                    },
+                                    {
+                                                name: "tamizh",
+                                                age: 25,
+                                                job: "java-developer"
+                                    },
+                                    {
+                                                name: "jeno",
+                                                age: 30,
+                                                job: "java-developer"
+                                    },
+                                    {
+                                                name: "sethu",
+                                                age: 18,
+                                                job: "java-developer"
+                                    },
+                                    {
+                                                name: "pravin",
+                                                age: 10,
+                                                job: "java-developer"
+                                    },
+                                    {
+                                                name: "surya",
+                                                age: 32,
+                                                job: "java-developer"
+                                    },
+                                    {
+                                                name: "kingston",
+                                                age: 28,
+                                                job: "java-developer"
+                                    },
+                                    {
+                                                name: "poorna",
+                                                age: 20,
+                                                job: "java-developer"
+                                    },
+                        ];
+
+                        // by age search
+                        var personAge = personDetails.filter(function (a) {
+                                    return a.age >= 28;
+                        })
+                        console.log(personAge);
+                        //by string search
+                        var personName = personDetails.filter(function (b) {
+                                    return b.name.includes("p");
+                        })
+                        console.log(personName);
+            </script>
+</body>
+
+</html>
